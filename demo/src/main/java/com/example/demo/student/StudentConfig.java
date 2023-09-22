@@ -11,21 +11,15 @@ import java.util.List;
 @Configuration
 public class StudentConfig {
 
-  @Bean
-  CommandLineRunner commandLineRunner(StudentRepository repository) {
-    return args -> {
-      Student miriam =
-          new Student(
-              1L,
-              "Miriam Maisal",
-              "miriam.maisal@gmail.com",
-              LocalDate.of(2000, Month.JANUARY, 7),
-              23);
-      Student joel =
-          new Student(
-              "Joel Maisal", "joel.maisal@gmail.com", LocalDate.of(1999, Month.JANUARY, 3), 24);
+    @Bean
+    CommandLineRunner commandLineRunner(StudentRepository repository) {
+        return args -> {
+            Student miriam = new Student(1L, "Miriam Maisal", "miriam.maisal@gmail.com",
+                    LocalDate.of(2000, Month.JANUARY, 7));
+            Student joel = new Student("Joel Maisal", "joel.maisal@gmail.com",
+                    LocalDate.of(1999, Month.JANUARY, 3));
 
-      repository.saveAll(List.of(miriam, joel));
-    };
-  }
+            repository.saveAll(List.of(miriam, joel));
+        };
+    }
 }
