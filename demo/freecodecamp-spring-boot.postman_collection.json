@@ -1,0 +1,116 @@
+{
+  "info": {
+    "_postman_id": "f3e21bc5-fb26-434e-97e9-45a01c97a739",
+    "name": "freecodecamp-spring-boot",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "6938756"
+  },
+  "item": [
+    {
+      "name": "GET student",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/v1/student",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "v1",
+            "student"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "POST student",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"name\": \"Aditya Cavil\",\n    \"email\": \"xgtysasedffggh@gmail.com\",\n    \"dob\": \"1996-10-31\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/v1/student",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "v1",
+            "student"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "DELETE student by id",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/v1/student/1",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "v1",
+            "student",
+            "1"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "PUT Student Name and Email",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/v1/student/4?email=henry.cavill@gmail.com",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "v1",
+            "student",
+            "4"
+          ],
+          "query": [
+            {
+              "key": "name",
+              "value": "Aditya Dhage",
+              "disabled": true
+            },
+            {
+              "key": "email",
+              "value": "henry.cavill@gmail.com"
+            }
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
